@@ -1,0 +1,62 @@
+@import '../../Scss/variables.scss';
+
+.calContainer {
+
+    width: 448px;
+    height: 564px;
+    background-color: antiquewhite;
+    //margin-right: 30px;
+    position: absolute;
+    right: 200px;
+    border-radius: 12px;
+    padding-left: 25px;
+    padding-top: 30px;
+
+}
+
+.unit {
+    margin-left: -30px;
+}
+
+.metircImperial {
+
+    width: 300px;
+}
+
+.resultsContainer {
+
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 500px;
+    height: 166px;
+    background-color: $Blue;
+    color: $White;
+    //border-radius: 16px;
+    padding-left: 30px;
+    padding-top: 48px;
+    padding-right: 50px;
+    border-top-right-radius: 95px;
+    border-bottom-right-radius: 95px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+}
+
+
+.descLeftSide {
+
+    width: 200px;
+}
+
+input {
+    padding-left: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    // border-color: $Borders;
+    // border-style: solid 1px;
+    border: 1px solid $Borders;
+    border-radius: 8px;
+}

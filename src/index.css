@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Inter-Regular.ttf' ;
+  src: local('Inter-Regular.ttf'), url('./assets/fonts/static/Inter-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold.ttf' ;
+  src: local('Inter-SemiBold.ttf'), url('./assets/fonts/static/Inter-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter-VariableFont_slnt,wght.ttf' ;
+  src: local('Inter-VariableFont_slnt,wght.ttf'), url('./assets/fonts/static/Inter-SemiBold.ttf') format('ttf');
+}
+
+
