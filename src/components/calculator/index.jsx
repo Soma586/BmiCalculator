@@ -9,12 +9,12 @@ const Calculator = () => {
 
         <div>
         <input type="radio" id="Metric" />
-        <label className="ms-3" for="Metric">Metric</label>
+        <label className="ms-3 type__BodyM " for="Metric">Metric</label>
         </div>
 
         <div>
         <input type="radio" id="Imperial" />
-        <label classNames="ms-3" for="Imperial">Imperial</label>
+        <label classNames="ms-3 type__BodyM " for="Imperial">Imperial</label>
         </div>
       </form>
 
@@ -22,28 +22,28 @@ const Calculator = () => {
 <div className="d-flex justify-content-between mt-4">
       
       <div>
-      <p>Height</p>
+      <p className="type__BodyS">Height</p>
         <input />
-        <span className="unit"> cm</span>
+        <span className="unit type__Headings"> cm</span>
       </div>
 
       
       <div>
-      <p>Weight</p>
+      <p className="type__BodyS">Weight</p>
         <input />
-        <span className="unit"> kg</span>
+        <span className="unit type__Headings"> kg</span>
       </div>
       </div>
 
       <div className="resultsContainer ">
         <div className="descLeftSide">
-          <p>Your BMI is...</p>
+          <p className="type__BodyM">Your BMI is...</p>
 
-          <h2>0</h2>
+          <h2 className="type__HeadingXL">0</h2>
         </div>
 
         <div>
-          <p>
+          <p className="type__BodyS">
             Your BMI suggests you're a healthy weight. Your ideal wieght is
             between
           </p>

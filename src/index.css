@@ -13,13 +13,15 @@ code {
 }
 
 @font-face {
-  font-family: 'Inter-Regular.ttf' ;
-  src: local('Inter-Regular.ttf'), url('./assets/fonts/static/Inter-Regular.ttf') format('ttf');
+  font-family: 'Inter-Regular' ;
+  /* src: local('Inter-Regular.ttf'), url('./assets/fonts/static/Inter-Regular.ttf') format('ttf'); */
+  src: url('./assets/fonts/static/Inter-Regular.ttf')
 }
 
 @font-face {
-  font-family: 'Inter-SemiBold.ttf' ;
-  src: local('Inter-SemiBold.ttf'), url('./assets/fonts/static/Inter-SemiBold.ttf') format('ttf');
+  font-family: 'Inter-SemiBold' ;
+  /* src: local('Inter-SemiBold.ttf'), url('./assets/fonts/static/Inter-SemiBold.ttf') format('ttf'); */
+  src: url('./assets/fonts/static/Inter-SemiBold.ttf')
 }
 
 @font-face {
