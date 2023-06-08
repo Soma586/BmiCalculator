@@ -1,0 +1,185 @@
+@import '../../Scss/main.scss';
+
+.fourthContainer {
+    height: 704px;
+    position: relative;
+    // width: 1440px;
+
+}
+
+.fourthDesc {
+
+
+
+
+    
+    text-align: center;
+    //margin-left: 50px;
+
+    @include breakpoint-xl {
+        text-align: left;
+        margin-left: 0px;
+    width: 564px;
+    position: absolute;
+    left: 0px;
+
+    }
+
+
+
+    
+
+
+}
+
+.fourthCard {
+    
+
+
+    box-shadow: 1px 5px 30px  5px rgba($color: #8FAECF, $alpha: 0.25);
+
+    border-radius: 16px;
+    padding: 36px;
+    z-index: 10;
+
+    height: 256px;
+
+    margin-top: 20px;
+
+    
+
+
+    @include breakpoint-md {
+        margin-top: 0px;
+        width: 327px;
+    }
+
+    @include breakpoint-xl {
+        
+        width: 365px;
+    }
+
+
+}
+
+.fourthIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.wrapper {
+
+
+  
+    margin: auto;
+
+    @include breakpoint-md{
+    display: grid;
+   
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    
+    }
+
+    @include breakpoint-lg{
+        display: grid;
+       
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+       
+        }
+
+    @include breakpoint-xl{
+
+        //display: none;
+        display: grid;
+        gap: 32px;
+        position: absolute;
+        right: 0;
+    }
+
+
+
+
+}
+
+
+
+
+.one{
+
+    
+    @include breakpoint-xl {
+        right: 100px;
+        grid-column: 2;
+        grid-row: 1;
+        position: relative;
+
+    }
+}
+
+.two {
+
+
+
+
+    @include breakpoint-xl {
+        grid-column: 2;
+        grid-row: 2;
+    }
+  
+}
+
+.three {
+    //display: none;
+   
+    @include breakpoint-xl {
+        grid-column: 1;
+        grid-row: 2
+    }
+
+   
+}
+
+.four {
+    //display: none;
+
+
+  
+    @include breakpoint-xl {
+        grid-column: 2;
+        grid-row: 3;
+        position: relative;
+        right: 200px;
+    }
+   
+}
+
+.five {
+    //display: none;
+
+
+    
+    @include breakpoint-xl {
+        grid-column: 1;
+        grid-row: 3;
+    
+        position: relative;
+        right: 200px;
+    }
+   
+}
+
+.leftcurved {
+    display: none;
+
+    
+
+    @include breakpoint-xl {
+        display: block;
+    height: 122px;
+    width: 94px;
+    margin-left: 132px;
+    margin-top: 64px;
+    }
+}
