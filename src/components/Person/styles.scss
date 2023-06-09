@@ -1,28 +1,71 @@
+@import "../../Scss/main.scss";
 
 .personContainer {
-
-
-    max-height: 533px;
+  max-height: 533px;
 }
 
 img {
-
-    // max-width: 300px;
-    // max-height: 300px;
-    
+  // max-width: 300px;
+  // max-height: 300px;
 }
-
 
 .wtf {
+  object-fit: contain;
+
+//   width: 435px;
+width: 375px;
+  height: 411px;
+
+  @include breakpoint-md {
+      width: 435px;
+    position: relative;
+    left: -116px;
+    // bottom: -150px;
+  }
+
+  @include breakpoint-lg {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    bottom: -0px;
+    left: -60px;
+  }
+
+  @include breakpoint-xl {
     width: 564px;
     height: 533px;
-    object-fit: contain;
+    position: static;
+  }
 }
 
+.personTitle {
+  @include breakpoint-md {
+    font-size: 33px !important;
+  }
+}
 
 .bmiDescription {
+  width: 465px;
+  height: 308px;
+  //margin-top: 180px;
 
-    width: 465px;
-    height: 308px;
-    margin-top: 180px;
+  margin-top: 60px;
+
+  position: relative;
+
+  @include breakpoint-md {
+    // margin-top: 180px;
+  }
+}
+
+.personCurve {
+  display: none;
+
+  @include breakpoint-xl {
+    display: block;
+    position: absolute;
+
+    right: 60px;
+    top: -250px;
+  }
 }
