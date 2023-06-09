@@ -12,13 +12,34 @@ const Card = (props) =>{
     const {icon, title, desc} = props
 
     return (
-        <div className="card">
+        <div className="card mb-3">
 
-            <img src={icon} className="iconImage"/>
+
+        <div className="d-lg-none d-xl-block">
+            <img src={icon} className="iconImage "/>
             
             <p className="type__HeadingM mt-5">{title}</p>
 
+            <p className="type__BodyM mt-3 ">{desc}</p>
+
+            </div>
+
+            <div className="d-none d-lg-block d-xl-none  d-lg-flex ">
+             
+             <div className="iconContainer">
+             <img src={icon} className="iconImage"/>
+             </div>
+            
+            
+            
+            <div className="ms-4">
+            <p className="type__HeadingM mt-5 buffer">{title}</p>
+
             <p className="type__BodyM mt-3">{desc}</p>
+            </div>
+           
+
+            </div>
 
         </div>
     )
@@ -61,7 +82,7 @@ const cards = arr.map((card) => {
         <div className="container thirdContainer">
 
 
-        <div className="d-flex justify-content-between">
+        <div className="d-xl-flex justify-content-between">
             {cards}
             </div>
             
