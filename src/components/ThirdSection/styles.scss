@@ -1,0 +1,60 @@
+@import '../../Scss/variables.scss';
+@import '../../Scss/main.scss';
+
+
+.thirdContainer {
+
+
+
+    //background:  linear-gradient(to right, $White 50%, rgba(214, 230, 254, 0.2) );
+        background: rgba(214, 230, 254, 0.2);
+
+        //box-shadow: rgba(214, 230, 254, 0.2);
+        box-shadow:6px 3px rgba(214, 230, 254, 0.2), -10em 0px rgba(214, 230, 254, 0.2);
+    @include breakpoint-md {
+
+    }
+
+    @include breakpoint-xl {
+    height: 402px;
+    //background-color: #D6E6FE;
+    
+    padding-top: 74px;
+    border-radius: 16px;
+    }
+}
+
+
+.card {
+
+
+    border: none !important;
+    background-color: transparent !important;
+    width: 100%;
+
+    @include breakpoint-xl{
+    height: 234px;
+    width: 365px;
+    
+    
+    }
+}
+
+.iconImage {
+
+    width: 64px;
+    height: 64px;
+
+   
+}
+
+.iconContainer {
+
+    margin: auto;
+}
+
+.buffer {
+    margin-top: 22px !important;
+}
+
+

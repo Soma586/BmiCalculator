@@ -2,12 +2,14 @@
 .heroContainer{
     //background-color: #D6E6FE;
     height: 737px;
+    
 }
 
 
 .leftSide{
     background-color: #D6E6FE;
-    border-bottom-right-radius: 20px
+    border-bottom-right-radius: 20px;
+    padding-top: 80px;
 }
 
 .rightSide {
@@ -17,4 +19,18 @@
 
 .heroTitle {
     font-family: 'Inter-SemiBold.ttf'
+}
+
+
+.heroDesc {
+    height: 270px;
+    width: 564px;
+    padding-right: 70px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+
+    margin-bottom: 150px;
 }
