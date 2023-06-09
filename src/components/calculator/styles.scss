@@ -2,15 +2,18 @@
 
 .calContainer {
 
-    width: 448px;
-    height: 564px;
-    background-color: antiquewhite;
+    height: 448px;
+    width: 564px;
+    // background-color: antiquewhite;
+    background-color: $White;
     //margin-right: 30px;
     position: absolute;
-    right: 200px;
+    right: 150px;
+    bottom: 40px;
     border-radius: 12px;
     padding-left: 25px;
     padding-top: 30px;
+    box-shadow: 1px 5px 30px  5px rgba($color: #8FAECF, $alpha: 0.25);
 
 }
 
