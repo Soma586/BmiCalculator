@@ -1,36 +1,88 @@
+@import '../../Scss/main.scss';
+
 
 .heroContainer{
     //background-color: #D6E6FE;
     height: 737px;
+    //width: 328px;
+    background-color: #D6E6FE;
+    //background: #D6E6FE;
     
 }
 
 
 .leftSide{
-    background-color: #D6E6FE;
+    text-align: center;
+    //background-color: #D6E6FE;
     border-bottom-right-radius: 20px;
     padding-top: 80px;
+    padding-bottom: 400px;
+    position: relative;
+    //z-index: -10;
+
+    @include breakpoint-md {
+        text-align:  center;
+    }
+
+    @include breakpoint-lg {
+        text-align:  left;
+    }
 }
 
 .rightSide {
-    position: relative;
+    //position: absolute;
+    //top: 500px;
+
+
+    margin-top: -350px;
+    z-index: 10;
+
+    @include breakpoint-lg {
+        margin-top: 250px;
+    }
+
+    @include breakpoint-xl {
+        margin-top: 125px;
+    }
 }
 
 
 .heroTitle {
-    font-family: 'Inter-SemiBold.ttf'
+    font-family: 'Inter-SemiBold.ttf';
+
+    @include breakpoint-sm {
+        font-size: 48px !important
+    }
 }
 
 
 .heroDesc {
+
+text-align: center;
+
+    @include breakpoint-md {
+    
+    text-align: center;
     height: 270px;
-    width: 564px;
-    padding-right: 70px;
+    
+    
+    }
+
+    @include breakpoint-lg {
+        text-align: left;
+        width:  564px;
+        padding-right: 70px;
+    }
 }
 
 .logo {
     width: 64px;
     height: 64px;
 
-    margin-bottom: 150px;
+    margin-bottom: 30px;
+
+
+    @include breakpoint-lg {
+        margin-bottom: 150px;
+    }
 }
