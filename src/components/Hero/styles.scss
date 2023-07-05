@@ -3,11 +3,22 @@
 
 .heroContainer{
     //background-color: #D6E6FE;
-    height: 737px;
+    //height: 737px;
     //width: 328px;
     background-color: #D6E6FE;
     //background: #D6E6FE;
+    padding-bottom: 30px;
+    padding-bottom: 80px;
+
+    @include breakpoint-lg {
+        height: 737px;
+        padding-bottom: 130px;
+    }
     
+}
+
+.backdrop {
+    background-color: #D6E6FE;
 }
 
 
@@ -16,8 +27,9 @@
     //background-color: #D6E6FE;
     border-bottom-right-radius: 20px;
     padding-top: 80px;
-    padding-bottom: 400px;
+    //padding-bottom: 400px;
     position: relative;
+    margin-bottom: 50px;
     //z-index: -10;
 
     @include breakpoint-md {
@@ -34,8 +46,8 @@
     //top: 500px;
 
 
-    margin-top: -350px;
-    z-index: 10;
+    //margin-top: -350px;
+    z-index: 7;
 
     @include breakpoint-lg {
         margin-top: 250px;

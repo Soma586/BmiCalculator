@@ -5,6 +5,7 @@ import Logo from '../../assets/images/logo.svg'
 const Hero = () => {
 
     return (
+        <div className="container-fluide backdrop">
         <div className="container heroContainer d-lg-flex justify-content-between">
            
                 <div className="leftSide ">
@@ -24,6 +25,7 @@ const Hero = () => {
 
             {/* <Calculator/> */}
 
+        </div>
         </div>
     )
 

@@ -107,6 +107,7 @@ input {
     border-radius: 8px;
     width: 100%;
 
+    z-index: 10;
 
     @include breakpoint-md {
         width: 300px;

@@ -65,7 +65,7 @@ const Calculator = () => {
   const inputRefs = useRef([]);
   //const inputRef = useRef(null)
 
-  const [inputValues, setInputValues] = useState(["", "", "", "", ""]);
+  const [inputValues, setInputValues] = useState(["", ""]);
 
 
 
@@ -166,7 +166,7 @@ const Calculator = () => {
   const ImperialBlock = () => {
     return (
       <div>
-        <div className="d-flex justify-content-between">
+        {/* <div className="d-flex justify-content-between">
           <div>
             <p className="type__BodyS">Height</p>
             <input
@@ -207,18 +207,20 @@ const Calculator = () => {
             />
             <span className="unit type__Headings">lbs</span>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   };
 
+
+  //MAIN ONE
   const MetricBlock = () => {
     const test = inputValues.map((value, index) => {
       return (
         <input
           key={index}
           type="number"
-          ref={(el) => (inputRefs.current[index] = el)}
+          //ref={(el) => (inputRefs.current[index] = el)}
           value={value}
           onChange={(event) => handleInputChange(event, index)}
         />
@@ -235,6 +237,7 @@ const Calculator = () => {
             key={0}
             ref={(el) => (inputRefs.current[0] = el)}
             value={inputValues[0]}
+            onWheel={ event => event.currentTarget.blur() }
             onChange={(event) => handleInputChange(event, 0)}
             type="number"
           />
@@ -246,6 +249,7 @@ const Calculator = () => {
           <input
             className="type__BodyMBold"
             key={1}
+            onWheel={ event => event.currentTarget.blur() }
             ref={(el) => (inputRefs.current[1] = el)}
             value={inputValues[1]}
             onChange={(event) => handleInputChange(event, 1)}
@@ -271,7 +275,7 @@ const Calculator = () => {
               <div>
                 <h3 className="type__HeadingM"> Welcome!</h3>
                 <p className="type__BodyS">
-                  Enter your Height and weight and you;ll see your BMI result
+                  Enter your Height and weight and you'll see your BMI result
                   here
                 </p>
               </div>

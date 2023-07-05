@@ -1,4 +1,4 @@
-
+@import '../Scss/main.scss';
 
 .type__HeadingXL {
 
@@ -11,8 +11,13 @@
 .type__HeadingL {
 
     font-family: 'Inter-SemiBold';
-    font-size: 48px;
+    font-size: 36px;
     line-height: 110%;
+
+
+    @include breakpoint-md {
+        font-size: 48px;
+    }
     
 }
 
