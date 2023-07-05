@@ -12,7 +12,7 @@ const Card = (props) =>{
     const {icon, title, desc} = props
 
     return (
-        <div className="card mb-3 pt-4">
+        <div className="card mb-3">
 
 
         <div className="d-lg-none d-xl-block">
